@@ -1,7 +1,5 @@
 # 🌌 Star Wars Universe Explorer
 
-![Banner Star Wars](https://i.imgur.com/8K1Wz7v.png)
-
 *"Que a Força esteja com você!"* ✨
 
 ## 🚀 Visão Geral
