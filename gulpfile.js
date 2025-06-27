@@ -59,3 +59,9 @@ exports.scripts = scripts;
 exports.fonts = fonts;
 exports.watch = watch;
 exports.default = gulp.series(gulp.parallel(styles, scripts, fonts), watch);
+
+// No seu gulpfile.js, verifique se a task de build gera os arquivos no local certo:
+gulp.task('build', () => {
+  return gulp.src('./src/**/*')
+    .pipe(gulp.dest('./dist')) // ← Esta pasta deve bater com a config da Vercel
+});
