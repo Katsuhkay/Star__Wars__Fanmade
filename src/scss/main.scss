@@ -1,0 +1,24 @@
+@use '../scss/layout/hero';
+@use '../scss/abstracts/variables';
+@use '../scss/abstracts/mixins';
+@use '../scss/base/fonts';
+@use '../scss/layout/_carrossel';
+
+@use '../scss/base/reset';
+@use '../scss/base/typography';
+@use '../scss/layout/_content';
+
+
+@use '../scss/layout/header';
+@use '../scss/layout/navigation';
+@use '../scss/layout/footer';
+
+@use '../scss/components/buttons';
+@use '../scss/components/lightsaber';
+
+body {
+    background-image: url('../../images/fundo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}

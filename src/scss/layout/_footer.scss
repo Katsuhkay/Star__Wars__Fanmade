@@ -1,0 +1,18 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+@use '../base/fonts';
+
+.footer {
+  @include mixins.center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: variables.$imperial-dark;
+  font-family: 'Orbitron';
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: block;
+  margin-top: 2rem;
+}

@@ -1,0 +1,75 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    border-bottom: 100px;
+    margin-bottom: 50px;
+    
+    .divider {
+        @include mixins.divider;
+    }
+    
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+.post {
+    background-color: variables.$rebel-white;
+    color: variables.$imperial-dark;
+    font-family: variables.$sans-default;
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px variables.$imperial-red;
+    
+    &__titulo--secundario {
+        @include mixins.fonte-titulo-principal;
+        @include mixins.espacamento;
+        font-family: variables.$jedi-font;
+    }
+
+    &__titulo--terciario {
+        @include mixins.espacamento;
+    }
+
+            .lista__obras {
+                .eras {
+                    list-style: none;
+                    padding: 0;
+
+                    img {
+                        border-radius: 10px;
+                    }
+
+                    li {
+                    margin-bottom: 2rem; // Espaçamento entre os itens da lista
+                    }
+
+                    .imagem-container {
+                    width: 100%; // Largura máxima do container
+                    max-width: 500px; // Define um tamanho máximo (ajuste conforme necessário)
+                    height: 500px; // Altura fixa para todas as imagens
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    overflow: hidden; // Garante que nada ultrapasse o container
+                    }
+
+                    img {
+                    max-width: 100%; // Limita a largura ao container
+                    max-height: 100%; // Limita a altura ao container
+                    object-fit: contain; // Mantém a proporção SEM cortar
+                    }
+                }
+            }
+}

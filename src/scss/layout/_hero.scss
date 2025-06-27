@@ -1,0 +1,65 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as m;
+
+.hero {
+    background-image: url('../images/deathstar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 2rem;
+    color: var.$rebel-white;
+    text-shadow: var.$lightsaber-glow;
+    font-family: var.$star-wars-font;
+    
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        font-family: 'StarJhol';
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+    }
+
+    .btn-hero {
+        background-color: transparent;
+        color: var.$force-gold;
+        border: 2px solid var.$force-gold;
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+
+        &:hover {
+        background-color: var.$force-gold;
+        color: var.$imperial-black;
+        box-shadow: var.$button-hover-shadow;
+        }
+    }
+    }
+
+    // 📱 Responsividade
+    @media (max-width: var.$breakpoint-md) {
+    .hero {
+        h1 {
+        font-size: 2.25rem;
+        }
+
+        p {
+        font-size: 1rem;
+        }
+    }
+}

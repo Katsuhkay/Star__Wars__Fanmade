@@ -1,0 +1,35 @@
+@use '../abstracts/variables';
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fonte-normal {
+  font-size: 12px;
+}
+
+@mixin fonte-titulo-principal {
+  font-size: 30px;
+  filter: drop-shadow(0 0 5px variables.$imperial-red);
+}
+
+@mixin fonte-titulo-secundario {
+  font-size: 25px;
+  font-family: variables.$star-wars-title;
+}
+
+@mixin divider($color: variables.$lightsaber-green, $thickness: 1px, $spacing: 1rem, $type: solid) {
+  border: 0;
+  border-top: $thickness $type $color;
+  margin: $spacing 0;
+  width: 100%;
+  color: variables.$lightsaber-green;
+  filter: drop-shadow(0 0 5px variables.$lightsaber-green);
+}
+
+@mixin espacamento {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,49 @@
+// =============================
+// 🎨 Cores Temáticas de Star Wars
+// =============================
+
+// Lado Sombrio
+$imperial-red: #ed1c24;        // Vermelho do Império
+$imperial-dark: #2e2e2e;       // Cinza escuro imperial
+$imperial-black: #0d0d0d;      // Preto puro
+
+// Jedi e Rebelião
+$lightsaber-blue: #29abe2;     // Sabre azul (Jedi)
+$lightsaber-green: #39b54a;    // Sabre verde (Yoda, Qui-Gon)
+$lightsaber-red: #ff0000;      // Sabre vermelho (Sith)
+$rebel-orange: #f7931e;        // Laranja usado em logos rebeldes
+$rebel-white: #f5f5f5;         // Fundo claro da Rebelião
+$force-gold: #ffd700;          // Dourado para a Força ou elementos nobres
+
+// Tons neutros
+$gray-light: #cccccc;
+$gray-dark: #666666;
+
+// Imagem de fundo
+$bg-sky: url('./images/fundo.webp');
+
+// =============================
+// 🅰️ Fontes Temáticas
+// =============================
+
+$star-wars-title: 'Orbitron', 'sans-serif'; // Título ou chamadas principais
+$star-wars-font: 'Merriweather', sans-serif;  // Para personagens do império
+$jedi-font: 'Lobster', Arial, sans-serif; // Para personagens Jedi
+$sans-default: 'Arial', sans-serif;         // Fonte de fallback e textos comuns
+
+// =============================
+// 💥 Efeitos
+// =============================
+
+$lightsaber-glow: 0 0 10px currentColor; // Usado em elementos com lightsaber
+$text-glow: 0 0 8px rgba(255, 255, 255, 0.8); // Glow padrão em textos
+$button-hover-shadow: 0 0 10px $force-gold; // Brilho dourado para botões ou destaques
+
+// =============================
+// 📐 Breakpoints (responsividade)
+// =============================
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;

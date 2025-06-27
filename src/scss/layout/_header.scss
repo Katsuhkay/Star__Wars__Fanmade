@@ -1,0 +1,22 @@
+@use '../abstracts/mixins'; 
+@use '../abstracts/variables';
+@use '../base/fonts';
+
+.header {
+  @include mixins.center;
+  padding: 1rem;
+  background-color: variables.$imperial-dark;
+
+  &__img {
+    height: 80px;
+    padding-right: 30px;
+    filter: drop-shadow(0 0 5px variables.$imperial-red);
+  }
+  
+  &__title {
+    font-family: 'Orbitron';
+    font-size: 2.5rem;
+    color: variables.$imperial-red;
+    text-shadow: variables.$lightsaber-glow;
+  }
+}

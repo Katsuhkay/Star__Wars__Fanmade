@@ -1,0 +1,11 @@
+@use '../abstracts/variables';
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: variables.$force-gold;
+  background-image: variables.$bg-sky;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+
+}

@@ -1,0 +1,6 @@
+@use '../abstracts/variables';
+
+nav {
+  background: variables.$imperial-dark;
+  padding: 1rem;
+}

@@ -1,0 +1,8 @@
+@use '../abstracts/variables';
+
+.lightsaber {
+  width: 200px;
+  height: 20px;
+  background: variables.$imperial-black;
+  border-radius: 10px;
+}
